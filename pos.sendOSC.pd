@@ -1,6 +1,6 @@
-#N canvas 0 27 1438 814 10;
+#N canvas 796 108 351 659 10;
 #X obj 24 37 packOSC;
-#X obj 24 9 inlet;
 #X obj 24 65 s OSCdest;
-#X connect 0 0 2 0;
-#X connect 1 0 0 0;
+#X obj 24 9 r OSCs;
+#X connect 0 0 1 0;
+#X connect 2 0 0 0;
