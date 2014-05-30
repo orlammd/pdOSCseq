@@ -1,0 +1,6 @@
+#N canvas 0 27 1438 814 10;
+#X obj 25 99 udpsend;
+#X msg 25 65 connect 192.168.0.100 12345;
+#X obj 25 29 loadbang;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
