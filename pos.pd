@@ -1,14 +1,17 @@
-#N canvas 0 27 1440 818 10;
-#X obj -55 17 bng 15 250 50 0 seqplay empty play 17 7 0 10 -262144
--1 -1;
-#X obj -55 37 bng 15 250 50 0 seqstop empty stop 17 7 0 10 -262144
--1 -1;
-#X obj 66 77 vsl 15 128 10 250 0 0 seqbpm seqbpm empty 0 -9 0 10 -262144
+#N canvas 0 27 1438 786 10;
+#X obj 14 11 bng 15 250 50 0 seqplay empty play 17 7 0 8 -262144 -1
+-1;
+#X obj 60 11 bng 15 250 50 0 seqstop empty stop 17 7 0 8 -262144 -1
+-1;
+#X obj 9 39 vsl 15 128 10 250 0 0 seqbpm seqbpm empty 0 -9 0 10 -262144
 -1 -1 4762 1;
-#X floatatom 85 86 5 0 0 0 - seqbpm -;
-#X obj -56 54 bng 15 250 50 0 empty seqtemoin Trig_Monitor 17 7 0 8
--262144 -1 -1;
-#X text 84 69 BPM;
-#X obj 186 43 pos.sendOSC;
-#X obj 186 64 pos.OSCdest;
-#X obj 186 23 pos.sequencer 100;
+#X floatatom 28 48 5 0 0 0 - seqbpm -;
+#X obj 104 11 bng 15 250 50 0 empty seqtemoin monitor 17 7 0 8 -262144
+-1 -1;
+#X text 27 31 BPM;
+#X obj 190 25 pos.sendOSC;
+#X obj 190 46 pos.OSCdest;
+#X obj 190 5 pos.sequencer 100;
+#X text 34 74 !!! BPM stands for the number of base units of the sequences
+per minute (i.e 16th for a 16-steps sequence in 4/4)!!!;
+#X coords 0 0 1 1 180 180 1 0 0;
