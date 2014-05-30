@@ -1,6 +1,4 @@
 #N canvas 457 69 815 633 10;
-#X obj 507 111 hradio 15 1 0 8 empty seqstepout empty 0 -8 0 10 -262144
--1 -1 7;
 #X floatatom 323 198 5 0 0 0 - - -;
 #X obj 81 60 bng 15 250 50 0 seqplay empty empty 17 7 0 10 -262144
 -1 -1;
@@ -14,16 +12,25 @@
 #X obj 258 108 metro \$1;
 #X obj 323 278 mod \$2;
 #X obj 258 321 print;
-#X connect 1 0 8 0;
-#X connect 2 0 6 0;
-#X connect 3 0 4 1;
-#X connect 3 0 1 0;
-#X connect 4 0 3 0;
-#X connect 5 0 10 0;
-#X connect 6 0 10 0;
-#X connect 6 1 7 0;
-#X connect 7 0 4 1;
-#X connect 8 0 11 0;
-#X connect 10 0 4 0;
-#X connect 11 0 9 0;
-#X connect 11 0 12 0;
+#X obj 507 111 hradio 15 1 0 1 empty seqstepout empty 0 -8 0 10 -262144
+-1 -1 0;
+#X obj 89 389 s seqstepout;
+#X obj 89 321 f \$2;
+#X obj 89 292 loadbang;
+#X msg 89 354 number \$1;
+#X connect 0 0 7 0;
+#X connect 1 0 5 0;
+#X connect 2 0 3 1;
+#X connect 2 0 0 0;
+#X connect 3 0 2 0;
+#X connect 4 0 9 0;
+#X connect 5 0 9 0;
+#X connect 5 1 6 0;
+#X connect 6 0 3 1;
+#X connect 7 0 10 0;
+#X connect 9 0 3 0;
+#X connect 10 0 8 0;
+#X connect 10 0 11 0;
+#X connect 14 0 16 0;
+#X connect 15 0 14 0;
+#X connect 16 0 13 0;
