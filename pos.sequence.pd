@@ -1,0 +1,27 @@
+#N canvas 0 27 1438 786 10;
+#X obj 185 120 s seqstepout;
+#X obj 281 46 hradio 15 1 0 16 empty seqstepout empty 0 -8 0 10 -262144
+-1 -1 0;
+#X obj 281 135 s seqstepout;
+#X obj 88 27 loadbang;
+#X msg 281 100 number \$1;
+#X obj 185 -18 r seqout;
+#X obj 88 56 f \$2;
+#X obj -30 44 symbol \$1;
+#X obj -30 75 print name;
+#X obj 185 21 spigot;
+#X obj 273 4 inlet;
+#X obj 281 73 \$1;
+#X obj 185 90 mod;
+#X connect 1 0 11 0;
+#X connect 3 0 6 0;
+#X connect 3 0 7 0;
+#X connect 4 0 2 0;
+#X connect 5 0 9 0;
+#X connect 7 0 8 0;
+#X connect 9 0 12 0;
+#X connect 10 0 9 1;
+#X connect 11 0 12 1;
+#X connect 11 0 4 0;
+#X connect 12 0 0 0;
+#X coords 0 -1 1 1 1024 45 1 270 25;
