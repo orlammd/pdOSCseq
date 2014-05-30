@@ -1,0 +1,14 @@
+#N canvas 0 27 1440 818 10;
+#X obj -55 17 bng 15 250 50 0 seqplay empty play 17 7 0 10 -262144
+-1 -1;
+#X obj -55 37 bng 15 250 50 0 seqstop empty stop 17 7 0 10 -262144
+-1 -1;
+#X obj 66 77 vsl 15 128 10 250 0 0 seqbpm seqbpm empty 0 -9 0 10 -262144
+-1 -1 4762 1;
+#X floatatom 85 86 5 0 0 0 - seqbpm -;
+#X obj -56 54 bng 15 250 50 0 empty seqtemoin Trig_Monitor 17 7 0 8
+-262144 -1 -1;
+#X text 84 69 BPM;
+#X obj 186 43 pos.sendOSC;
+#X obj 186 64 pos.OSCdest;
+#X obj 186 23 pos.sequencer 100;
