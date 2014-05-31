@@ -1,6 +1,6 @@
 #N canvas 0 27 1438 801 10;
 #X obj 292 43 pos;
-#X obj 619 31 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 619 31 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 619 56 pos.sequence jean;
 #X obj 292 231 pos.OSCdest 192.168.1.82 56418;
